@@ -1,0 +1,19 @@
+{
+  "loginCredentials": {
+    "email": "yinaa56@hotmail.com",
+    "password": "P@ssword123!"
+  },
+  "searchCriteria": {
+    "type": "CLASSIC"
+  },
+  "rolesList": [
+    { "rol": "ADMIN" },
+    { "rol": "SUB_ADMIN" },
+    { "rol": "MEMBER" }
+  ],
+  "monthsList": [
+    { "mes": "01" },
+    { "mes": "03" },
+    { "mes": "12" }
+  ]
+}

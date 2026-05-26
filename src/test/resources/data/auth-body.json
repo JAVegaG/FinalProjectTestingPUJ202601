@@ -1,0 +1,19 @@
+{
+  "validCredentials": {
+    "email": "yinaa56@hotmail.com",
+    "password": "P@ssword123!"
+  },
+  "invalidCredentials": {
+    "email": "jhon.doe@gmail.com",
+    "password": "wrong_password"
+  },
+  "existingUser": {
+    "firstName": "John",
+    "secondName": "Alexander",
+    "lastName": "Doe",
+    "secondLastName": "Smith",
+    "email": "john.doe@email.com",
+    "password": "P@ssword123!",
+    "phoneNumber": "3123456789"
+  }
+}

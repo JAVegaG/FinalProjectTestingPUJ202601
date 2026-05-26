@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+}
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral() // Esto es vital para que Gradle sepa de dónde descargar Karate
+}
+dependencies {
+    // La librería principal de Karate
+    testImplementation 'com.intuit.karate:karate-junit5:1.4.1'
+
+    // Opcional: Si necesitas reportes visuales más bonitos (Cucumber Reports)
+    testImplementation 'net.masterthought:cucumber-reporting:5.7.7'
+}
+
+// Configuración necesaria para que Gradle encuentre los archivos .feature
+sourceSets {
+    test {
+        resources {
+            srcDir 'src/test/java'
+            exclude '**/*.java'
+        }
+    }
+}
+
+// Comando para ejecutar las pruebas desde la terminal
+test {
+    useJUnitPlatform()
+    systemProperty "karate.options", System.properties.getProperty("karate.options")
+    systemProperty "karate.env", System.properties.getProperty("karate.env")
+    outputs.upToDateWhen { false }
+}
