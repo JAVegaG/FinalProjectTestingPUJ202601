@@ -1,0 +1,33 @@
+{
+    "existingUser": {
+        "firstName": "John",
+        "secondName": "Alexander",
+        "lastName": "Doe",
+        "secondLastName": "Smith",
+        "email": "john.doe@email.com",
+        "phoneNumber": "3123456789",
+        "documentNumber": "12345678",
+        "password": "P@ssword123!",
+        "termsAndConditions": {
+            "law1581Authorization": true,
+            "law1581AuthorizationDate": "2023-10-05T14:48:00.000Z"
+        }
+    },
+    "nonexistingUser": {
+        "firstName": "John",
+        "secondName": "Alexander",
+        "lastName": "Doe",
+        "secondLastName": "Smith",
+        "email": "USER.TEST@EMAIL.COM",
+        "phoneNumber": "3123456789",
+        "documentNumber": "12345678",
+        "password": "P@ssword123!",
+        "termsAndConditions": {
+            "law1581Authorization": true,
+            "law1581AuthorizationDate": "2023-10-05T14:48:00.000Z"
+        }
+    },
+    "status": {
+        "confirmed": "CONFIRMED"
+    }
+}

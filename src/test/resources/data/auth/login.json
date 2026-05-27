@@ -1,0 +1,10 @@
+{
+    "validCredentials": {
+        "email": "test_user@javegag.com",
+        "password": "Test@javegag@puj202601"
+    },
+    "invalidCredentials": {
+        "email": "jhon.doe@gmail.com",
+        "password": "wrong_password"
+    }
+}
