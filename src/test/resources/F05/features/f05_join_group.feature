@@ -20,6 +20,11 @@ Feature: F-05 — Unión al grupo mediante enlace de invitación
     * def inviteToken  = inviteResult.inviteUrl.split('=').pop()
     * print 'Invite token extraído:', inviteToken
 
+      # Token de un grupo ya activado para TC-JG-05
+    * def activeGroupResult = read('classpath:F05/data/token-activado.json')
+    * def activeGroupToken  = activeGroupResult.token
+    * print 'Token de grupo ACTIVE:', activeGroupToken
+
   # ────────────────────────────────────────────────
   # CLASES NO VÁLIDAS — primero, no modifican estado
   # ────────────────────────────────────────────────
@@ -118,4 +123,13 @@ Feature: F-05 — Unión al grupo mediante enlace de invitación
     Then status 400
     And match response.message contains 'already'
     * print 'Respuesta intento duplicado:', response
+
+  @token @tc-jg-05
+  Scenario: [TC-JG-05] Intento de unirse a un grupo ACTIVE — debe retornar 400
+    Given path '/saving-groups/join/' + activeGroupToken
+    And header Authorization = 'Bearer ' + outsiderToken
+    When method POST
+    Then status 400
+    And match response.message == 'Group is already active'
+    * print 'Respuesta grupo activo:', response
 
