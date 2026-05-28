@@ -1,0 +1,10 @@
+{
+  "owner": {
+    "email": "owner.test@ahorro.com",
+    "password": "Test1234!"
+  },
+  "outsider": {
+    "email": "outsider.test@ahorro.com",
+    "password": "Test1234!"
+  }
+}
