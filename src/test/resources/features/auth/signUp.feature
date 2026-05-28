@@ -1,5 +1,5 @@
 @GestionAutenticación @F-01
-Feature: Gestión de Autenticación y Acceso de Usuarios
+Feature: Gestión de Autenticación y Acceso de Usuarios > Registro de usuario
   Como usuario del sistema
   Quiero autenticarme y gestionar mi cuenta
   Para acceder a las funciones de aplicación web de Círculos
