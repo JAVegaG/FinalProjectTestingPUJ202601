@@ -1,0 +1,19 @@
+{
+    "additionalUserCredentials": {
+        "email": "secondary.user@test.com",
+        "password": "P@ssword123!"
+    },
+    "secondAdditionalUserCredentials": {
+        "email": "third.user@test.com",
+        "password": "P@ssword123!"
+    },
+    "externalUserCredentials": {
+        "email": "external.user@test.com",
+        "password": "P@ssword123!"
+    },
+    "expiredToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJleHBpcmVkLXRlc3QtdG9rZW4iLCJpYXQiOjE3MDAwMDAwMDAsImV4cCI6MTcwMDAwMDAwMX0.invalid-signature",
+    "status": {
+        "accepted": "ACCEPTED",
+        "active": "ACTIVE"
+    }
+}
