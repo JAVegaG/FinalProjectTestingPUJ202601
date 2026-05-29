@@ -1,0 +1,11 @@
+{
+  "invalidTokens": {
+    "malformed": "aadadasnñ$_invalid_token",
+    "thirtyOneCharacters": "1234567890abcdef1234567890abcde",
+    "thirtyThreeCharacters": "1234567890abcdef1234567890abcdef1",
+    "singleCharacter": "a"
+  },
+  "status": {
+    "accepted": "ACCEPTED"
+  }
+}

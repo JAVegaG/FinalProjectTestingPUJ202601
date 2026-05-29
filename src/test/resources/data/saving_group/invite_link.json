@@ -1,0 +1,9 @@
+{
+  "invalidGroupIds": {
+    "notFound": 9999999,
+    "zero": 0,
+    "tooLarge": 4294967296,
+    "alphanumeric": "FF",
+    "decimal": "1.0"
+  }
+}
