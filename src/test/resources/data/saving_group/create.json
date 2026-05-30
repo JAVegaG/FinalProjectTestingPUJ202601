@@ -1,0 +1,34 @@
+{
+    "status": {
+        "draft": "DRAFT"
+    },
+    "newGroup": {
+        "title": "Viaje 2026",
+        "description": "Ahorro para viaje grupal",
+        "savingGoal": 2000000,
+        "paymentFrequency": "MONTHLY",
+        "totalMembers": 3,
+        "firstPaymentDate": "2026-07-01",
+        "returnDate": "2026-12-01",
+        "reminderDays": 3
+    },
+    "updateGroup": {
+        "title": "Prueba",
+        "description": "Updated description",
+        "type": "CLASSIC",
+        "savingGoal": 2000000,
+        "paymentFrequency": "MONTHLY",
+        "totalMembers": 5,
+        "firstPaymentDate": "2025-12-10",
+        "returnDate": "2026-12-10"
+    },
+    "invalidDatesGroup": {
+        "title": "Grupo ahorro familiar",
+        "description": "My description",
+        "savingGoal": 2000000,
+        "paymentFrequency": "MONTHLY",
+        "totalMembers": 4,
+        "firstPaymentDate": "2026-12-10",
+        "returnDate": "2025-12-11"
+    }
+}

@@ -6,11 +6,11 @@ Este proyecto contiene pruebas automatizadas desarrolladas con Karate Framework,
 
 Lenguaje: Java 17 (LTS)
 
-Framework de Pruebas: Karate 2.2.2
+Framework de Pruebas: Karate 1.4.1
 
-Gestor de Dependencias: Gradle 8.12.1
+Pruebas de carga: Gatling 3.9.5 + Karate Gatling
 
-📋 Pre-requisitos
+Gestor de Dependencias: Gradle 8.4
 
 Antes de ejecutar el proyecto, asegúrate de cumplir con lo siguiente:
 
@@ -76,13 +76,27 @@ Ejecutar un feature o Runner específico:
 
 ./gradlew test --tests "nombre.de.tu.clase.Runner"
 
+Ejecutar la prueba PoC de carga para creación de grupos:
+
+./gradlew gatlingRun-performance.SavingGroupCreateSimulation
+
 📊 Reportes
 
-Al finalizar, Karate genera reportes HTML detallados. Puedes encontrarlos en: build/karate-reports/karate-summary.html
+Al finalizar, Karate genera reportes HTML detallados. Puedes encontrarlos en:
+
+build/karate-reports/karate-summary.html
+
+Gatling genera el reporte HTML de la prueba de carga en:
+
+build/reports/gatling/savinggroupcreatesimulation-*/index.html
 
 📁 Estructura del Proyecto
 
 src/test/java: Contiene los archivos .feature y las clases Java Runner.
+
+src/gatling/scala: Contiene las simulaciones Gatling.
+
+src/gatling/resources: Contiene features Karate usados por Gatling.
 
 karate-config.js: Configuración global (URLs, ambientes, variables).
 
